@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.iyad.sultan.flishlight.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/RadioGroupMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp">
+
+        <RadioButton
+            android:id="@+id/normalMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:padding="5dp"
+            android:text="@string/normal"
+            android:textSize="@dimen/radoi_button" />
+
+        <RadioButton
+            android:id="@+id/blinkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:padding="5dp"
+            android:text="@string/blink"
+            android:textSize="@dimen/radoi_button" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imgFalsh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:background="#00303f9f"
+        android:onClick="GoAHead"
+        android:src="@drawable/off" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/mode"
+        android:id="@+id/mode"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FlishLight</string>
+
+    <string name="mode">اختر الوضع</string>
+    <string name="normal">طبيعي</string>
+    <string name="blink">الطوارئ</string>
+
+</resources>
